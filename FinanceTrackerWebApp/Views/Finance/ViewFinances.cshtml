@@ -1,0 +1,116 @@
+﻿@model FinanceTrackerWebApp.Models.FinanceModel
+
+@{
+    ViewBag.Title = "View Finances";
+}
+
+<!-- Header 22373B  4B89C9-->
+<header style="background: #457373; margin: 10px; height: 300px">
+    <p style="padding-top: 10%">
+
+    </p>
+    <h1 style="color: white; text-align: center">
+        Finance Details
+    </h1>
+</header>
+
+<!-- Container -->
+<div>
+
+    <!-- Income Details -->
+    <div style="width: inherit; height: 15%">
+
+        <!-- Income -->
+        <div style="width: inherit">
+            <h3 style="color: #5A6868; text-align: center">
+                Income : R @Html.DisplayFor(model => model.Income)
+            </h3>
+        </div>
+
+        <!-- Available Money -->
+        <div style="width: inherit">
+            <h3 style="color: #5A6868; text-align: center">
+                Available Money : R @Html.DisplayFor(model => model.AvailableMoney)
+            </h3>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div style="width: inherit">
+        <h1 style="color: #5A6868; text-align: center">
+            Monthly Income
+        </h1>
+    </div>
+
+    <!-- Monthly Expenses -->
+    <div style="width: inherit; height: 15%">
+
+        <!-- Tax Deduction -->
+        <div style="width: inherit">
+            <h3 style="color: #5A6868; text-align: center">
+                Tax Deduction : R @Html.DisplayFor(model => model.TaxDeduction)
+            </h3>
+        </div>
+
+        <!-- Groceries -->
+        <div style="width: inherit">
+            <h3 style="color: #5A6868; text-align: center">
+                Groceries : R @Html.DisplayFor(model => model.Groceries)
+            </h3>
+        </div>
+
+        <!-- Utilities -->
+        <div style="width: inherit">
+            <h3 style="color: #5A6868; text-align: center">
+                Utilities : R @Html.DisplayFor(model => model.Utilities)
+            </h3>
+        </div>
+
+        <!-- Travel -->
+        <div style="width: inherit">
+            <h3 style="color: #5A6868; text-align: center">
+                Travel : R @Html.DisplayFor(model => model.Travel)
+            </h3>
+        </div>
+
+        <!-- Phone -->
+        <div style="width: inherit">
+            <h3 style="color: #5A6868; text-align: center">
+                Phone: R @Html.DisplayFor(model => model.Phone)
+            </h3>
+        </div>
+
+        <!-- Other -->
+        <div style="width: inherit">
+            <h3 style="color: #5A6868; text-align: center">
+                Other : R @Html.DisplayFor(model => model.Other)
+            </h3>
+        </div>
+
+        <!-- House -->
+        <div style="width: inherit">
+            <h3 style="color: #5A6868; text-align: center">
+                House : R @Html.DisplayFor(model => model.House)
+            </h3>
+        </div>
+
+        <!-- Vehicle -->
+        <div style="width: inherit">
+            <h3 style="color: #5A6868; text-align: center">
+                Vehicle : R @Html.DisplayFor(model => model.Vehicle)
+            </h3>
+        </div>
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</div>

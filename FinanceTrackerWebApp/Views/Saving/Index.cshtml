@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- Header -->
+<header style="background: #457373; margin: 10px; height: 300px">
+    <p style="padding-top: 10%">
+
+    </p>
+    <h1 style="color: white; text-align: center">
+        Savings
+    </h1>
+</header>
+
+
+<!-- Page cards -->
+<div style=" margin: 10px; height:400px; margin-left: 25%">
+
+
+    <!-- View infomation page -->
+    <div style="margin: 1.5%; margin-top: 10px ;width: 30%; height: 100%; background: #5A6868; float: left">
+
+        <!-- Header -->
+        <h4 style="text-align: center">
+            New Saving Goal
+        </h4>
+
+        <!-- Image -->
+        <div style="width: 100%; height: 70%">
+            <img class="profilePicture" src="~/Images/calculator.png" style="width: inherit; height: 80%" />
+        </div>
+
+        <!-- Button -->
+        <div style="background: #FFF; width: inherit; height: 20px">
+            @Html.ActionLink("Create", "CreateSaving", "Saving")
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Enter finances -->
+    <div style="margin: 1.5%; margin-top: 10px ;width: 30%; height: 100%; background: #5A6868; float: left">
+
+        <!-- Header -->
+        <h4 style="text-align: center">
+            View Savings Goals
+        </h4>
+
+        <!-- Image -->
+        <div style="width: 100%; height: 70%">
+            <img class="profilePicture" src="~/Images/stackomoney.png" style="width: inherit; height: 80%" />
+        </div>
+
+        <!-- Button -->
+        <div style="background: #FFF; width: inherit; height: 20px">
+            @Html.ActionLink("View", "GetAllSavings", "Saving")
+        </div>
+
+    </div>
+</div>

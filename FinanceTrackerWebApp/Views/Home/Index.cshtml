@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!-- Header 22373B  4B89C9-->
+<header style="background: #457373; margin: 10px; height: 300px">
+    <p style="padding-top: 10%">
+
+    </p>
+    <h1 style="color: white; text-align: center">
+        Finance Details
+    </h1>
+</header>
+
+
+<!-- Page cards -->
+<div style=" margin: 10px; height:400px">
+
+
+    <!-- View infomation page -->
+    <div style="margin: 1.5%; margin-top: 10px ;width: 30%; height: 100%; background: #5A6868; float: left">
+
+        <!-- Header -->
+        <h3 style="text-align: center">
+            Enter Financial Information
+        </h3>
+
+        <!-- Image -->
+        <div style="width: 100%; height: 70%">
+            <img class="profilePicture" src="~/Images/calculator.png"  style="width: inherit; height: 80%" />
+        </div>
+
+        <!-- Button -->
+        <div style="background: #FFF; width: inherit; height: 20px">
+            @Html.ActionLink("Enter", "EnterIncomeInfo", "Finance")
+        </div>
+
+
+    </div>
+
+
+    <!-- Enter finances -->
+    <div style="margin: 1.5%; margin-top: 10px ;width: 30%; height: 100%; background: #5A6868; float: left">
+
+        <!-- Header -->
+        <h3 style="text-align: center">
+            View financial Information
+        </h3>
+
+        <!-- Image -->
+        <div style="width: 100%; height: 70%">
+            <img class="profilePicture" src="~/Images/dollars.png" style="width: inherit; height: 80%" />
+        </div>
+
+        <!-- Button -->
+        <div style="background: #FFF; width: inherit; height: 20px">
+            @Html.ActionLink("View", "ViewFinances", "Finance")
+        </div>
+
+
+    </div>
+
+    <!-- Savings page -->
+    <div style="        margin: 1.5%;
+        margin-top: 10px;
+        width: 30%;
+        height: 100%;
+        background: #5A6868;
+        float: left">
+
+        <!-- Header -->
+        <h3 style="text-align: center">
+            Savings Goal
+        </h3>
+
+        <!-- Image -->
+        <div style="width: 100%; height: 70%">
+            <img class="profilePicture" src="~/Images/stackomoney.png" style="width: inherit; height: 80%" />
+        </div>
+
+        <!-- Button -->
+        <div style="background: #FFF; width: inherit; height: 20px">
+            @Html.ActionLink("Savings", "Index", "Saving")
+        </div>
+
+
+    </div>
+
+
+
+</div>
